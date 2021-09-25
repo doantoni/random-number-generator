@@ -1,24 +1,114 @@
+body {
+  margin: 0;
+}
+
+.container, .exactNumber {
+  width: 100px;
+  height: 100px;
+}
+
+.button {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10% auto;
+  color: white;
+
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+}
+
+.inputContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center
+}
+
+input {
+  height: 100px;
+  width: 500px;
+  border-radius: 100px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 70px;
+}
+
+button {
+  
+  width: 400px;
+  height: 100px;
+  border-radius: 24px;
+  background: seagreen;
+  box-shadow: 6px 6px 12px black;
+  color: white;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  
+  
+}
+@keyframes MoveUpDown {
+
+  0%, 100% {
+
+    bottom: 0;
+  }
+  50% {
+    bottom: 100px;
+  }
+}
+
+HTML CSS Result Skip Results Iframe
+body {
+  margin: 0;
+}
+
+.container, .exactNumber {
+  width: 300px;
+  height: 300px;
+}
+
+
 .container {
-	height: 500px;
-	width: 500px;
-	background-color: blue;
-	text: center;
-margin: 0 auto;
-color: white;
-font-size: xx-large;
-border-radius: 50px;
-text-align: center;
-display: flex;
-align-items: center;
-justify-content: center;
-margin-top: 30vh;
-box-shadow: 3px 9px 15px black;
-transition: 1s;
+  -webkit-animation: x 13s linear infinite alternate;
+          animation: x 13s linear infinite alternate;
+       
 }
 
-.container:hover {
-	border-radius: 50%;
-	background-color: yellow;
-	color: black
+.exactNumber {
+  -webkit-animation: y 7s linear infinite alternate;
+          animation: y 7s linear infinite alternate;
+          background: gold;
+          font-size: 70px;
+
+          font-family: Arial, Helvetica, sans-serif;
+             display: flex;
+          justify-content: center;
+          align-items: center;
+          border-radius: 50%;
+          box-shadow: 6px 6px 12px black
 }
 
+@-webkit-keyframes x {
+  100% {
+    transform: translateX(calc(100vw - 100px));
+  }
+}
+
+@keyframes x {
+  100% {
+    transform: translateX(calc(100vw - 100px));
+  }
+}
+@-webkit-keyframes y {
+  100% {
+    transform: translateY(calc(100vh - 100px));
+  }
+}
+@keyframes y {
+  100% {
+    transform: translateY(calc(100vh - 100px));
+  }
+}
